@@ -1,8 +1,9 @@
 {
   "name": "api-siga-fatec",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converte os dados exibidos do navegador do siga em uma pequena api para integrar na sua aplicação",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",

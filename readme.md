@@ -1,5 +1,8 @@
-
 # Api Siga para Fatec
+
+[![Sob a licença gpl][licensaBadge]][npmLink]
+[![Build no travisCi][travisCIBadge]][travisCiLink]
+[![Disponível no NPM][npmBadge]][npmLink]
 
 ![imgSiga]
 
@@ -14,9 +17,9 @@ Ele simula uma sessão do siga fazendo requisições HTTP `GET` e `POST`, Os dad
 
 ## Como instalar e usar
 
-Por enquanto, não é possivel usar esta api sem ter seguido os passos da aba "Como posso melhorar" deste readme
+Com o node(npm) instalado, digite `npm i api-siga-fatec` no terminal
 
-Um preview de como usar esta aplicação, seria algo como:
+Para usar esta biblioteca:
 
     import FatecApi from 'api-siga-fatec';
     
@@ -69,3 +72,8 @@ O motivo de ter feito uma igual foi para que ele **seja escrita em português**,
 [urlGit]: https://git-scm.com/download/win
 [urlSiga]: https://siga.cps.sp.gov.br/aluno/login.aspx
 [imgSiga]: https://siga.cps.sp.gov.br/aluno/Resources/logosiga.png "Logo do siga"
+[travisCIBadge]: https://travis-ci.com/thide11/api-siga-fatec.svg?branch=master "Imagem da build no travisCI"
+[travisCILink]: https://travis-ci.com/thide11/api-siga-fatec "Build no travisCI"
+[npmBadge]: https://img.shields.io/npm/v/api-siga-fatec "Disponível no npm"
+[licensaBadge]: https://img.shields.io/npm/l/api-siga-fatec "Sob a licença GPL"
+[npmLink]: https://www.npmjs.com/package/api-siga-fatec "Link do npm"
