@@ -15,7 +15,7 @@ let htmlParser: IHtmlParser = new HtmlParser();
     let data: string;
 
     beforeAll(() => {
-      data = fs.readFileSync(__dirname + '\\..\\fixtures\\siga_home.html', 'utf8');
+      data = fs.readFileSync(__dirname + '/../fixtures/siga_home.html', 'utf8');
     })
 
     it('Deve ler o html do siga e transformar em um usuario', () => {
@@ -33,7 +33,7 @@ let htmlParser: IHtmlParser = new HtmlParser();
     let data: string;
 
     beforeAll(() => {
-      data = fs.readFileSync(__dirname + '\\..\\fixtures\\siga_login_invalido.html', 'utf8');
+      data = fs.readFileSync(__dirname + '/../fixtures/siga_login_invalido.html', 'utf8');
     });
 
     it('Deve ler o html do siga e ver se o login foi inválido', () => {
@@ -46,7 +46,7 @@ let htmlParser: IHtmlParser = new HtmlParser();
     let data: string;
 
     beforeAll(() => {
-      data = fs.readFileSync(__dirname + '\\..\\fixtures\\siga_horarios.html', 'utf8');
+      data = fs.readFileSync(__dirname + '/../fixtures/siga_horarios.html', 'utf8');
     });
 
     it('Deve ler o html do siga e gerar os horarios', () => {

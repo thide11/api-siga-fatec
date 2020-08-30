@@ -55,7 +55,7 @@ Para duplicar ele e testar ele, faça o seguite processo:
 
 + Certifique de que tenha [git][urlGit] instalado no seu pc
 + De um `git clone <UrlDesteRepositório>` no terminal
-+ Depois, se você quizer efetuar testes online, abra o código fonte, e navega dentro do projeto, para o diretório app\\online\\\_\_tests\_\_\infrastructure\fixtures
++ Depois, se você quizer efetuar testes online, abra o código fonte, e navega dentro do projeto, para o diretório app/online/\_\_tests\_\_/infrastructure/fixtures
 + Dentro da maioria dos arquivos dentro desta pasta, terá instruções de como preparar o codigo fonte para testes unitários
 + Logo após ter seguido todas as intruções, teste no terminal com o comando `npm test`, ou `npm test:offline` se não tiver configurado para efetuar testes online
 

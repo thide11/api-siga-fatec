@@ -31,7 +31,7 @@ function gerarResponse(data : any, status : number = 200, headers : {} = {}){
   )
 }
 
-const dataSigaLogin = fs.readFileSync(__dirname + '\\..\\fixtures\\siga_login.html', 'utf8');
+const dataSigaLogin = fs.readFileSync(__dirname + '/../fixtures/siga_login.html', 'utf8');
 axiosMock.get.mockImplementation((url, config) : Promise<AxiosResponse<any>> => {
   const sessionIdSimulado = TOKEN_SESSAO;
   if(url == (BASE_URL + Endpoints.LOGIN)) {
@@ -49,7 +49,7 @@ axiosMock.get.mockImplementation((url, config) : Promise<AxiosResponse<any>> => 
   const cookieEnviado : string = config?.headers['Cookie'];
   if(url == (BASE_URL + Endpoints.HOME)) {
     if(cookieEnviado && cookieEnviado.includes(sessionIdSimulado)) {
-      const data = fs.readFileSync(__dirname + '\\..\\fixtures\\siga_home.html', 'utf8');
+      const data = fs.readFileSync(__dirname + '/../fixtures/siga_home.html', 'utf8');
       return gerarResponse(data);
     } else {
       return gerarResponse(dataSigaLogin);    
@@ -57,7 +57,7 @@ axiosMock.get.mockImplementation((url, config) : Promise<AxiosResponse<any>> => 
   }
   if(url == (BASE_URL + Endpoints.HORARIO)) {
     if(cookieEnviado.includes(sessionIdSimulado)) {
-      const data = fs.readFileSync(__dirname + '\\..\\fixtures\\siga_horarios.html', 'utf8');
+      const data = fs.readFileSync(__dirname + '/../fixtures/siga_horarios.html', 'utf8');
       return gerarResponse(data);
     } else {
       return gerarResponse(dataSigaLogin);
