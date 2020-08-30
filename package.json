@@ -1,0 +1,43 @@
+{
+  "name": "api-siga-fatec",
+  "version": "0.0.1",
+  "description": "Converte os dados exibidos do navegador do siga em uma pequena api para integrar na sua aplicação",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:online": "jest app/__tests__/online/",
+    "test:offline": "jest app/__tests__/offline/",
+    "test:htmlParser": "jest app/__tests__/offline/infrastructure/crawler/html_parser.test.ts",
+    "test:fatecApi": "jest app/__tests__/offline/infrastructure/crawler/fatec_api.test.ts",
+    "test:rede": "jest app/__tests__/offline/infrastructure/rede/axios_rede.test.ts",
+    "test:onlineFatecApi": "jest app/__tests__/online/infrastructure/crawler/fatec_api.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thide11/api-siga-fatec"
+  },
+  "keywords": [
+    "fatec",
+    "Centro Paula Souza",
+    "fatec-api",
+    "api-siga",
+    "api",
+    "siga"
+  ],
+  "author": "Thiago Viana Avelar De Souza",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.21",
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}

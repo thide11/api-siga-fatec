@@ -1,0 +1,6 @@
+export enum FatecApiErrosCode {
+  CREDENCIAIS_INVALIDAS = 1,
+  SIGA_TIMEOUT = 2,
+  FALTANDO_TOKEN = 3,
+  ERRO_INTERNO = 4,
+}
