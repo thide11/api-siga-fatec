@@ -5,14 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "test:online": "jest app/__tests__/online/",
-    "test:offline": "jest app/__tests__/offline/",
-    "test:htmlParser": "jest app/__tests__/offline/infrastructure/crawler/html_parser.test.ts",
-    "test:fatecApi": "jest app/__tests__/offline/infrastructure/crawler/fatec_api.test.ts",
-    "test:rede": "jest app/__tests__/offline/infrastructure/rede/axios_rede.test.ts",
-    "test:onlineFatecApi": "jest app/__tests__/online/infrastructure/crawler/fatec_api.test.ts"
+    "start": "ts-node app/testar.ts"
   },
   "repository": {
     "type": "git",
@@ -29,10 +22,12 @@
   "author": "Thiago Viana Avelar De Souza",
   "license": "GPL-3.0",
   "dependencies": {
-    "axios": "^0.20.0",
+    "api-siga-fatec": "^0.0.2",
+    "axios": "^0.21.4",
     "cheerio": "^1.0.0-rc.3",
     "dotenv": "^8.2.0",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.21",
