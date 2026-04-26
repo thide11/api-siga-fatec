@@ -1,14 +1,17 @@
 # Api Siga para Fatec
 
 [![Sob a licença gpl][licensaBadge]][npmLink]
-[![Build no travisCi][travisCIBadge]][travisCiLink]
 [![Disponível no NPM][npmBadge]][npmLink]
-
-![imgSiga]
 
 Api não oficial feita para a [ERP siga][urlSiga], para fatecanos ou faculdades que utilizam o siga
 
-## Como funciona
+## Atenção❗ Este projeto foi descontinuado
+
+Este projeto foi escrito em 2020 e o siga passou por várias alterações, por exemplo, como a IA facilitou ataques de brechas de segurança, o siga em 2026 teve que refazer seu sistema de login para contas microsoft, impossibilitando usar a bibliteca pois ela usava o usuário e senha do SIGA
+
+Gostaria de agradecer todos os +2 mil downloads que confiaram nesta bibliteca para trazer os dados do SIGA.
+
+## Como funcionava
 
 Ele simula uma sessão do siga fazendo requisições HTTP `GET` e `POST`, Os dados vem de duas formas:
 
@@ -50,30 +53,7 @@ De uma instancia de `FatecApi`, depois de chamar o método `.logar`, você tambe
 
 O código estará sempre estará disponível para melhorias e novas funcionalidades
 
-## Como posso melhorar
-
-Se você quiser corrigir erros ou adicionar novas funcionalidades, sinta-se a vontade
-
-Para duplicar ele e testar ele, faça o seguite processo:
-
-+ Certifique de que tenha [git][urlGit] instalado no seu pc
-+ De um `git clone <UrlDesteRepositório>` no terminal
-+ Depois, se você quizer efetuar testes online, abra o código fonte, e navega dentro do projeto, para o diretório app/online/\_\_tests\_\_/infrastructure/fixtures
-+ Dentro da maioria dos arquivos dentro desta pasta, terá instruções de como preparar o codigo fonte para testes unitários
-+ Logo após ter seguido todas as intruções, teste no terminal com o comando `npm test`, ou `npm test:offline` se não tiver configurado para efetuar testes online
-
-## Motivação
-
-Eu tenho conhecimento da biblioteca do [filipe][bibliotecafilipe] que faz exatamente a mesma coisa.
-
-O motivo de ter feito uma igual foi para que ele **seja escrita em português**, de **código limpo** e para **alimentar uma futura aplicação que irá consumir ela**
-
-[bibliotecafilipe]: https://github.com/filipemeneses/fatec-api
-[urlGit]: https://git-scm.com/download/win
 [urlSiga]: https://siga.cps.sp.gov.br/aluno/login.aspx
-[imgSiga]: https://siga.cps.sp.gov.br/aluno/Resources/logosiga.png "Logo do siga"
-[travisCIBadge]: https://travis-ci.com/thide11/api-siga-fatec.svg?branch=master "Imagem da build no travisCI"
-[travisCILink]: https://travis-ci.com/thide11/api-siga-fatec "Build no travisCI"
 [npmBadge]: https://img.shields.io/npm/v/api-siga-fatec "Disponível no npm"
 [licensaBadge]: https://img.shields.io/npm/l/api-siga-fatec "Sob a licença GPL"
 [npmLink]: https://www.npmjs.com/package/api-siga-fatec "Link do npm"
